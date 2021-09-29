@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="40dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="40dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/titleEditTxtView"
+        style="@style/title_txt_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit"
+        app:layout_constraintBottom_toTopOf="@+id/profPicImgView"
+        app:layout_constraintEnd_toEndOf="@id/gdEnd"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/gdStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16000003"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/profPicImgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_prof_pic"
+        app:layout_constraintBottom_toTopOf="@+id/nameEditTxtView"
+        app:layout_constraintEnd_toEndOf="@id/gdEnd"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/gdStart"
+        app:layout_constraintTop_toBottomOf="@+id/titleEditTxtView" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/nameEditTxtView"
+        style="@style/edit_text_field"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/name"
+        app:layout_constraintBottom_toTopOf="@+id/lastNameEditTxtView"
+        app:layout_constraintEnd_toEndOf="@id/gdEnd"
+        app:layout_constraintStart_toStartOf="@id/gdStart"
+        app:layout_constraintTop_toBottomOf="@+id/profPicImgView" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/lastNameEditTxtView"
+        style="@style/edit_text_field"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/lastname"
+        app:layout_constraintBottom_toTopOf="@+id/mailEditTxtView"
+        app:layout_constraintEnd_toEndOf="@id/gdEnd"
+        app:layout_constraintStart_toStartOf="@id/gdStart"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditTxtView" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/mailEditTxtView"
+        style="@style/edit_text_field"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        app:layout_constraintBottom_toTopOf="@+id/yearEditTxtView"
+        app:layout_constraintEnd_toEndOf="@id/gdEnd"
+        app:layout_constraintStart_toStartOf="@id/gdStart"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameEditTxtView" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/yearEditTxtView"
+        style="@style/edit_text_field"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:hint="@string/born_year"
+        app:layout_constraintBottom_toTopOf="@+id/genderEditTxtView"
+        app:layout_constraintEnd_toEndOf="@id/gdEnd"
+        app:layout_constraintStart_toStartOf="@id/gdStart"
+        app:layout_constraintTop_toBottomOf="@+id/mailEditTxtView" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/genderEditTxtView"
+        style="@style/edit_text_field"
+        android:layout_width="0dp"
+        android:hint="@string/gender"
+        app:layout_constraintBottom_toTopOf="@+id/saveBtnView"
+        app:layout_constraintEnd_toEndOf="@id/gdEnd"
+        app:layout_constraintStart_toStartOf="@id/gdStart"
+        app:layout_constraintTop_toBottomOf="@+id/yearEditTxtView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveBtnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/gdEnd"
+        app:layout_constraintStart_toStartOf="@id/gdStart"
+        app:layout_constraintTop_toBottomOf="@id/genderEditTxtView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

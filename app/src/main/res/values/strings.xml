@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Profile Details</string>
+    <string name="profile">Profile</string>
+    <string name="edit">Edit</string>
+    <string name="default_name">Giorgi</string>
+    <string name="default_lastname">Kakhetelidze</string>
+    <string name="email_not_valid">Email is not validate</string>
+    <string name="username_length">name length is less than 3</string>
+    <string name="lastname_length">name length is less than 3</string>
+    <string name="year_not_integer">Year is not integer</string>
+    <string name="fill_every_fields">You must fill every field</string>
+    <string name="filled_fields">Success</string>
+    <string name="default_mail">Kakhetelidzegio@gmail.com</string>
+    <string name="default_year">1994</string>
+    <string name="default_gender">Male</string>
+    <string name="gender">Gender</string>
+    <string name="born_year">Born Year</string>
+    <string name="email">Email</string>
+    <string name="lastname">LastName</string>
+    <string name="name">Name</string>
+    <string name="save">Save</string>
+</resources>
